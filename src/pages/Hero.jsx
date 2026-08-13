@@ -1,8 +1,9 @@
 import Navbar from "../components/Navbar";
 import HeroImage from "../assets/hero.png";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -29,15 +30,19 @@ const Hero = () => {
           </p>
 
           <div className="mt-7 flex flex-wrap justify-center gap-3 md:justify-start">
-            <Button
-              text="Explore My Work"
-              className="rounded-full bg-[#111111] text-sm font-semibold tracking-wide text-white shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] transition duration-300 hover:bg-white hover:text-[#111111]"
-            />
+            <Link
+              to="/#works"
+              className="rounded-full bg-[#111111] px-6 py-3 text-sm font-semibold tracking-wide text-white shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] transition duration-300 hover:bg-white hover:text-[#111111]"
+            >
+              Explore My Work
+            </Link>
 
-            <Button
-              text="Let's Connect"
-              className="rounded-full bg-white text-sm font-semibold tracking-wide text-[#111111] shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] transition duration-300 hover:bg-[#111111] hover:text-white"
-            />
+            <Link
+              to="/#contact"
+              className="rounded-full bg-white px-6 py-3 text-sm font-semibold tracking-wide text-[#111111] shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] transition duration-300 hover:bg-[#111111] hover:text-white"
+            >
+              Let's Connect
+            </Link>
           </div>
           <div className="mt-8 flex items-center justify-center gap-3 md:justify-start">
             <a
