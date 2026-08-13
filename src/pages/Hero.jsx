@@ -29,7 +29,7 @@ const Hero = () => {
             products.
           </p>
 
-          <div className="mt-7 flex flex-wrap justify-center gap-3 md:justify-start">
+          <div className="mt-7 flex justify-center gap-3 md:justify-start">
             <a
               href="#works"
               className="rounded-full bg-[#111111] px-6 py-3 text-sm font-semibold tracking-wide text-white shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] transition duration-300 hover:bg-white hover:text-[#111111]"
