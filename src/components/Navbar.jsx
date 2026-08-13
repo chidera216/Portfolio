@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Button from "./Button";
+import Resume from "../assets/Chidex-Resume.pdf";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +38,8 @@ const Navbar = () => {
           {/* Desktop Button */}
           <div className="hidden md:block ml-3.5">
             <Button
+              href={Resume}
+              download="Chidex-Resume.pdf"
               text="Download Resume"
               className="bg-[#111111] text-white rounded-full text-sm font-semibold tracking-wide shadow-[0_15px_30px_-5px_rgba(0,0,0,0.5)] hover:bg-[#FF4A00] transition duration-300 active:scale-95"
             />
@@ -85,15 +88,9 @@ const Navbar = () => {
               Works
             </a>
 
-            <a
-              href="#pricing"
-              onClick={() => setIsOpen(false)}
-              className="text-gray-700 hover:text-orange-500 transition"
-            >
-              Pricing
-            </a>
-
             <Button
+              href={Resume}
+              download="Chidex-Resume.pdf"
               text="Download Resume"
               className="bg-[#111111] text-white rounded-full text-sm font-semibold px-5 py-2 hover:bg-[#FF4A00] transition"
             />
