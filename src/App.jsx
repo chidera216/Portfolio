@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import BackToTop from "./components/BackToUp";
-import ScrollToHash from "./components/ScrollToHash";
-
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
@@ -27,8 +25,6 @@ const Home = () => {
 const App = () => {
   return (
     <BrowserRouter>
-      <ScrollToHash />
-
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
