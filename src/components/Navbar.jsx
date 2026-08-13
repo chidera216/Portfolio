@@ -32,13 +32,6 @@ const Navbar = () => {
             >
               Works
             </a>
-
-            <a
-              href="#pricing"
-              className="text-gray-700 hover:text-orange-500 transition"
-            >
-              Pricing
-            </a>
           </div>
 
           {/* Desktop Button */}
