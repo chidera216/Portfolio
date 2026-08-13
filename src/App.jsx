@@ -8,7 +8,7 @@ import Works from "./pages/Work";
 
 const App = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <Hero />
       <About />
       <Services />
@@ -16,7 +16,7 @@ const App = () => {
       <Contact />
       <Footer />
       <BackToTop />
-    </>
+    </div>
   );
 };
 
