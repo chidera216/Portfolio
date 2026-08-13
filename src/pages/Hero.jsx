@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
 import HeroImage from "../assets/hero.png";
-// import Button from "../components/Button";
+import Button from "../components/Button";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { Mail } from "lucide-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
     >
       <Navbar />
 
-      <div className="relative mx-auto min-h-[calc(100vh-80px)] max-w-7xl px-6 sm:px-10 md:px-10 lg:px-10">
+      <div className="relative mx-auto min-h-[calc(100vh-80px)] max-w-7xl px-6 mt-10 sm:px-10 md:px-10 lg:px-10">
         {/* Left Content */}
         <div className="relative z-10 pt-12 text-center md:absolute md:left-16 md:top-1/2 md:w-[30%] md:-translate-y-1/2 md:pt-0 md:text-left lg:left-20">
           <p className="mb-4 text-sm font-medium text-white/80 md:text-base">
@@ -30,19 +30,25 @@ const Hero = () => {
           </p>
 
           <div className="mt-7 flex flex-wrap justify-center gap-3 md:justify-start">
-            <Link
-              to="/#works"
-              className="rounded-full bg-[#111111] px-6 py-3 text-sm font-semibold tracking-wide text-white shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] transition duration-300 hover:bg-white hover:text-[#111111]"
-            >
-              Explore My Work
-            </Link>
+            <Button
+              text="Explore My Work"
+              onClick={() => {
+                document.getElementById("works")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="rounded-full bg-[#111111] text-sm font-semibold tracking-wide text-white shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] transition duration-300 hover:bg-white hover:text-[#111111]"
+            />
 
-            <Link
-              to="/#contact"
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold tracking-wide text-[#111111] shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] transition duration-300 hover:bg-[#111111] hover:text-white"
-            >
-              Let's Connect
-            </Link>
+            <Button
+              text="Let's Connect"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="rounded-full bg-white text-sm font-semibold tracking-wide text-[#111111] shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] transition duration-300 hover:bg-[#111111] hover:text-white"
+            />
           </div>
           <div className="mt-8 flex items-center justify-center gap-3 md:justify-start">
             <a

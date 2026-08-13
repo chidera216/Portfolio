@@ -1,7 +1,9 @@
-const Button = (props) => {
+const Button = ({ text, className = "", onClick }) => {
   return (
     <div>
-      <button className={`px-5 py-2.5 ${props.className}`}>{props.text}</button>
+      <button onClick={onClick} className={`px-5 py-2.5 ${className}`}>
+        {text}
+      </button>
     </div>
   );
 };
