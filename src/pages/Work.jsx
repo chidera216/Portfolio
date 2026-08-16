@@ -82,7 +82,9 @@ const Works = () => {
 
                   {/* View Project */}
                   <button className="mt-8 inline-flex items-center gap-3 text-sm font-semibold transition-all duration-300 hover:gap-5 hover:text-[#FF4A00]">
-                    View Project
+                    <a href="https://focusly-rho-livid.vercel.app/">
+                      View Project
+                    </a>
                     <span className="text-lg">↗</span>
                   </button>
                 </div>
