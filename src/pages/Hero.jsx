@@ -9,11 +9,11 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_50%_50%,#FF4A00_0%,#C82A00_100%)]"
+      className="relative h-screen md:h-[600px] overflow-hidden bg-[radial-gradient(circle_at_50%_50%,#FF4A00_0%,#C82A00_100%)]"
     >
       <Navbar />
 
-      <div className="relative mx-auto min-h-[calc(100vh-80px)] max-w-7xl px-6 mt-10 sm:px-10 md:px-10 lg:px-10">
+      <div className="relative mx-auto h-screen md:h-[500px]  max-w-7xl px-6 mt-10 sm:px-10 md:px-10 lg:px-10">
         {/* Left Content */}
         <div className="relative z-10 pt-12 text-center md:absolute md:left-16 md:top-1/2 md:w-[30%] md:-translate-y-1/2 md:pt-0 md:text-left lg:left-20">
           <p className="mb-4 text-sm font-medium text-white/80 md:text-base">
